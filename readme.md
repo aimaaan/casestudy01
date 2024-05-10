@@ -13,7 +13,21 @@ seeker
     - Identify, evaluate and prevent of:
       - Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)
       - Hash Disclosure
-      - CSRF
+      - CSRF (Cross-Site Request Forgery)
+      - Secured Cookies
+
+2. Z ()
+    - Identify, evaluate and prevent of:
+      - csp
+      - JS Library
+      - HTTPS implementation (TLS/SSL)
+
+3. N ()
+    - Identify, evaluate and prevent of:
+      - Cookie Poisoning
+      - Potential XSS
+      - Information Disclosure
+
 
 ## Table of Contents
 1. [Description](#desc)
