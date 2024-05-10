@@ -30,7 +30,7 @@ seeker
     10. [Information Disclosure](#inf)
 
 ## <a name="desc"/> Description
-Our assigned web application is the Ministry of Higher Education (MOHE) website at https://www.mohe.gov.my/en. In this case study, our group will look into the vulnerabilities of the web application by scanning the website using OWASP ZAP using both the automated scan and manual explore. 
+Our assigned web application is the . In this case study, our group will look into the vulnerabilities of the web application by scanning the website using OWASP ZAP using both the automated scan and manual explore. 
 We will mainly be focusing on automated scan due to the large amount of webpages the site has. <br>
 
 The alerts observed are listed on the table of contents and we will also identify the level of risk for each alert and additional information on the classification of threats (CWE or CVE).
