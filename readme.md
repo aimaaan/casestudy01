@@ -20,7 +20,7 @@ seeker
       - CSRF (Cross-Site Request Forgery)
       - Secured Cookies
 
-2. Z ()
+2. Muhammad Zafran bin Zamani (2110893)
     - Identify, evaluate and prevent of:
       - csp
       - JS Library
