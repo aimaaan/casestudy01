@@ -121,5 +121,53 @@ References:
 - https://cwe.mitre.org/data/definitions/642.html
 - https://cwe.mitre.org/data/definitions/829.html
 
+### <a name="hash"/> b. Hash Disclosure
+#### Identify:
+- No alerts, i.e. no vulnerability detected by the automated scan. There is also no risk level and cwe assigned on ZAP's alert page.
 
-  
+#### Evaluate:
+- N/a for this website. The definition of it is a hash that was disclosed/leaked by the web server.
+
+#### Prevent:
+- N/a for this website. Otherwise, ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser.
+
+### <a name="csrf"/>c. CSRF
+#### Identify:
+- Absence of Anti-CSRF Tokens <br>
+![3](https://github.com/aimaaan/casestudy01/assets/99475237/ae5589cc-5577-48ad-917e-32f2b2fa6d0f)
+    - Eg. of absence: <br>
+    ![3 1](https://github.com/aimaaan/casestudy01/assets/99475237/5db0928b-ebcf-4316-bd9c-d975937cf4f3)
+    - CWE ID: 352 - Cross-Site Request Forgery (CSRF)
+    - Risk level: Medium
+    - Confidence level: Low
+
+#### Evaluate:
+Based on  examination of HTML submission forms present on the website, it was discovered that no Anti-CSRF tokens were present.
+Anti CSRF tokens are (pseudo) random parameters used to protect against Cross Site Request Forgery (CSRF) attacks. However they also make a penetration testers job harder, especially if the tokens are regenerated every time a form is requested.
+
+CSRF attacks are effective in a number of situations, including:
+    * The victim has an active session on the target site.
+    * The victim is authenticated via HTTP auth on the target site.
+No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: "__EVENTARGUMENT" "__EVENTTARGET" "__EVENTVALIDATION" "__VIEWSTATE" "__VIEWSTATEGENERATOR" ].
+
+#### Prevent:
+- Phase: Architecture and Design
+   - Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+     For example, use anti-CSRF packages such as the OWASP CSRFGuard.
+   - Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).
+     Note that this can be bypassed using XSS.
+
+- Phase: Implementation
+   - Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.
+   - Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy         reasons.
+
+- Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.
+- Note that this can be bypassed using XSS.
+- Use the ESAPI Session Management control. This control includes a component for CSRF.
+- Do not use the GET method for any request that triggers a state change.
+
+References:
+- https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+- https://cwe.mitre.org/data/definitions/352.html
+
+
