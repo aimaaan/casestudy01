@@ -22,7 +22,7 @@ seeker
 
 2. Muhammad Zafran bin Zamani (2110893)
     - Identify, evaluate and prevent of:
-      - csp
+      - CSP
       - JS Library
       - HTTPS implementation (TLS/SSL)
 
@@ -190,6 +190,22 @@ References:
 
 References:
 - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
+
+### <a name="csp"/>e. CSP
+#### Identify:
+- Identified as Content Security Policy (CSP) Header Not Set
+- Classified as CWE ID: 693
+- Risk level: Medium
+- Confidence: Low
+#### Evaluate:
+- Alert type is Passive
+- CWE-693 denotes protection mechanism failure, which implies that this web application does not utilize or wrongly uses a protection mechanism that offers adequate defense against directed attacks. This weakness applies to three different circumstances.
+- Alert tags
+  - OWASP_2017_A06
+  - OWASP_2021_A05
+#### Prevent:
+- Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.
+- Configure the webserver to return the Content-Security-Policy HTTP Header with values controlling which resources the browser can load for the page
 
 ### <a name="jsl"/>f. JS Library
 #### Identify:
