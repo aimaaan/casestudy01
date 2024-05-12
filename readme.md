@@ -27,6 +27,7 @@ seeker
       - HTTPS implementation (TLS/SSL)
 
 3. Muhammad Nasrullah Bin Mat Radzi (2013677)
+    - Weekly progress report
     - Identify, evaluate and prevent of:
       - Cookie Poisoning
       - Potential XSS
