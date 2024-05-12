@@ -191,6 +191,22 @@ References:
 References:
 - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
 
+### <a name="coo"/>f. JS Library
+#### Identify:
+- Identified as Vulnerable JS Library
+- Classified as CWE ID: 829
+- Risk level: Medium
+- Reference: https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/
+#### Evaluate:
+- Alert type is Passive
+- The identified library jquery, version 3.4.1 is vulnerable.
+- Alert tags
+  - OWASP_2017_A09
+  - OWASP_2021_A06
+#### Prevent:
+- Upgrade to the latest version of jquery.
+- Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
+
 ### <a name="coo"/>g. Cookie Poisoning
 #### Identify:
 - No alert was found by OWASP ZAP. Thus, no risk level and CWE ID.
