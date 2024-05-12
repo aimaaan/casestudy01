@@ -191,7 +191,7 @@ References:
 References:
 - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
 
-### <a name="coo"/>f. JS Library
+### <a name="jsl"/>f. JS Library
 #### Identify:
 - Identified as Vulnerable JS Library
 - Classified as CWE ID: 829
