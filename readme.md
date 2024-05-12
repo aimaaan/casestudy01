@@ -1,4 +1,4 @@
-![1 3 1](https://github.com/aimaaan/casestudy01/assets/99475237/10bea6a1-3df3-40b7-b3d3-4f1fb6310561)# Case Study
+# Case Study
 
 ## Group Name
 
