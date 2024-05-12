@@ -226,7 +226,7 @@ References:
 ### <a name="https"/>g. HTTPS implementation (TLS/SSL)
 #### Identify:
 
-### <a name="coo"/>g. Cookie Poisoning
+### <a name="coo"/>h. Cookie Poisoning
 #### Identify:
 - No alert was found by OWASP ZAP. Thus, no risk level and CWE ID.
 #### Evaluate:
@@ -234,7 +234,7 @@ References:
 #### Prevent:
 - Not available on this website. If not, the solution for this alert is not to enable the user to modify cookie names and values. If query string parameters must be placed in cookie values, ensure that semicolons are not used as name/value pair delimiters.
 
-### <a name="pot"/>h. Potential XSS
+### <a name="pot"/>i. Potential XSS
 <ins>Automated scan:</ins>
 #### Identify:
 - Identified as User Controllable HTML Element Attribute.
@@ -258,7 +258,7 @@ References:
    ![xss_ME](https://github.com/aimaaan/casestudy01/assets/106076684/c2e25486-1bba-46d6-868e-057804ebd1fd)
 - Above is the Alerts for the potential XSS where its shows the User Controllable HTML Element Attribute (Potential XSS) (852).
   
-### <a name="inf"/>i. Information Disclosure
+### <a name="inf"/>j. Information Disclosure
 <ins>Automated scan:</ins>
   
 #### Identify:
