@@ -1,4 +1,4 @@
-# Case Study
+![1 3 1](https://github.com/aimaaan/casestudy01/assets/99475237/10bea6a1-3df3-40b7-b3d3-4f1fb6310561)# Case Study
 
 ## Group Name
 
@@ -96,6 +96,12 @@ Wappalyzer extension shows the web application technology stack used.
 ### <a name="serv"/>b. Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)
 
 #### Identify:
+- Timestamp Disclosure - Unix (8) <br>
+![1 3](https://github.com/aimaaan/casestudy01/assets/99475237/28bdb9a0-e932-48d9-bce3-f63453555926)
+  - CWE ID: 200 - Exposure of Sensitive Information to an Unauthorized Actor
+  - Risk level: Low
+  - Confidence level: Low
+
 - Old Asp.Net Version in Use <br>
 ![image](https://github.com/aimaaan/casestudy01/assets/99475237/0bd0246d-41fc-434d-88cd-e8eae5d25ac5)
   - CWE ID: 642 - External Control of Critical State Data
@@ -109,6 +115,11 @@ Wappalyzer extension shows the web application technology stack used.
     - Confidence level: Medium
 
 #### Evaluate:
+- Timestamp Disclosure:
+   - A timestamp was disclosed by the application/web server - Unix
+   - 1713213937, which evaluates to: 2024-04-16 04:45:37 <br>
+   ![1 3 1](https://github.com/aimaaan/casestudy01/assets/99475237/5cf3dc6f-497d-4cb8-b2a2-43900ceb1b80)
+
 - Old Asp.Net:
    - The web application server use uses ASP.NET version 1.0 or 1.1
    - Shows in the server header in URL: https://selangorfc.com/en/news/3349/Match%20Preview%20LS18%20%7C%20Selangor%20FC%20vs%20Sabah%20FC%20%7C%20Prepared%20and%20Motivated%20for%20Battle
@@ -116,6 +127,8 @@ Wappalyzer extension shows the web application technology stack used.
    - The page includes one or more script files from a third-party domain.
 
 #### Prevent:
+- Timestamp Disclosure:
+   - Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.
 - Old Asp.Net:
    - Ensure the engaged framework is still supported by Microsoft.
 - Cross-Domain:
@@ -123,6 +136,7 @@ Wappalyzer extension shows the web application technology stack used.
 
 Observed examples of these exploits can be seen on their cwe mitre webpage accordingly.
 References:
+- https://cwe.mitre.org/data/definitions/200.html
 - https://cwe.mitre.org/data/definitions/642.html
 - https://cwe.mitre.org/data/definitions/829.html
 
