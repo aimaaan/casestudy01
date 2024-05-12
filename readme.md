@@ -35,7 +35,7 @@ seeker
 
 1. [Description](#desc)
 2. [Observation Results](#obsv)
-    1. [Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)](#serv)
+    a. [Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)](#serv)
     2. [Hash Disclosure](#hash)
     3. [CSRF](#csrf)
     4. [Secured Cookies](#sec)
