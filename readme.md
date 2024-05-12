@@ -223,6 +223,9 @@ References:
 - Upgrade to the latest version of jquery.
 - Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
 
+### <a name="https"/>g. HTTPS implementation (TLS/SSL)
+#### Identify:
+
 ### <a name="coo"/>g. Cookie Poisoning
 #### Identify:
 - No alert was found by OWASP ZAP. Thus, no risk level and CWE ID.
