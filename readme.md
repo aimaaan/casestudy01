@@ -171,7 +171,7 @@ References:
 
 ### <a name="sec"/> d. Secured Cookies
 #### Identify:
-- Identified as Cookie without the same attribute
+- Identified as Cookie without the same attribute <br>
 ![4](https://github.com/aimaaan/casestudy01/assets/99475237/ce9050ac-a0ff-4ab3-b307-88bb3f0b5013)
 - CWE ID: 1275 - Sensitive Cookie with Improper SameSite Attribute
 - Risk level: Low
