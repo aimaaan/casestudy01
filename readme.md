@@ -229,7 +229,7 @@ References:
 #### Evaluate:
 - Not available because this website already has a https implementation, as shown by the URL of the website.
 #### Prevent:
-- This alert is not configured on the website. To fix it, confirm that all of the necessary hardware like web servers, application servers and load balancers is set up to only deliver content via HTTPS. Consider putting HTTP Strict Transport Security into practice.
+- Not available for the website. However, the solution is to confirm that all of the necessary hardware like web servers, application servers and load balancers is set up to only deliver content via HTTPS. Consider putting HTTP Strict Transport Security into practice.
 
 ### <a name="coo"/>h. Cookie Poisoning
 #### Identify:
