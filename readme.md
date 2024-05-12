@@ -49,7 +49,7 @@ seeker
     9. [Cookie Poisoning](#coo)
     10. [Potential XSS](#pot)
     11. [Information Disclosure](#inf)
-  4. [Weekly Progress Report].(#wpr)
+  4. [Weekly Progress Report](#wpr)
 
 ## <a name="desc"/> Description
 
@@ -307,4 +307,5 @@ https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/j
 - Above is another alert that I found but the risk level is LOW and the alerts show Big redirect detected (potential sensitive informatil leak (50). 
 
 ### <a name="wpr"/>4. Weekly Progress Report
-[Weekly Progress Report.pdf](https://github.com/aimaaan/casestudy01/files/15286519/Weekly.Progress.Report.pdf)
+
+[Weekly Progress Report.pdf](https://github.com/aimaaan/casestudy01/files/15286564/Weekly.Progress.Report.pdf)
