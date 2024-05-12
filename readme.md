@@ -7,7 +7,7 @@ seeker
 ## Group Members
 
 1. Ahmad Arif Aiman bin Ahmad Fauzi (2113419)
-2. N
+2. Muhammad Nasrullah Bin Mat Radzi (2013677)
 3. Z
 
 ## Assigned Tasks
@@ -26,7 +26,7 @@ seeker
       - JS Library
       - HTTPS implementation (TLS/SSL)
 
-3. N ()
+3. Muhammad Nasrullah Bin Mat Radzi (2013677)
     - Identify, evaluate and prevent of:
       - Cookie Poisoning
       - Potential XSS
@@ -170,7 +170,7 @@ References:
 - https://cwe.mitre.org/data/definitions/352.html
 
 
-### <a name="serv"/>g. Cookie Poisoning
+### <a name="#coo"/>g. Cookie Poisoning
 #### Identify:
 - No alert was found by OWASP ZAP. Thus, no risk level and CWE ID.
 #### Evaluate:
@@ -178,7 +178,7 @@ References:
 #### Prevent:
 - Not available on this website. If not, the solution for this alert is not to enable the user to modify cookie names and values. If query string parameters must be placed in cookie values, ensure that semicolons are not used as name/value pair delimiters.
 
-### <a name="serv"/>h. Potential XSS
+### <a name="#pot"/>h. Potential XSS
 <ins>Automated scan:</ins>
 #### Identify:
 - Identified as User Controllable HTML Element Attribute.
@@ -202,7 +202,7 @@ References:
    ![xss_ME](https://github.com/aimaaan/casestudy01/assets/106076684/c2e25486-1bba-46d6-868e-057804ebd1fd)
 - Above is the Alerts for the potential XSS where its shows the User Controllable HTML Element Attribute (Potential XSS) (852).
   
-### <a name="serv"/>i. Information Disclosure
+### <a name="#inf"/>i. Information Disclosure
 <ins>Automated scan:</ins>
   
 #### Identify:
