@@ -169,6 +169,22 @@ References:
 - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 - https://cwe.mitre.org/data/definitions/352.html
 
+### <a name="sec"/> d. Secured Cookies
+#### Identify:
+- Identified as Cookie without the same attribute
+![4](https://github.com/aimaaan/casestudy01/assets/99475237/ce9050ac-a0ff-4ab3-b307-88bb3f0b5013)
+- CWE ID: 1275 - Sensitive Cookie with Improper SameSite Attribute
+- Risk level: Low
+- Confidence level: Medium
+
+#### Evaluate:
+- A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective countermeasure to cross-site request forgery, cross-site script inclusion, and timing attacks.
+
+#### Prevent:
+- Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.
+
+References:
+- https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
 
 ### <a name="coo"/>g. Cookie Poisoning
 #### Identify:
