@@ -225,6 +225,11 @@ References:
 
 ### <a name="https"/>g. HTTPS implementation (TLS/SSL)
 #### Identify:
+- There is no alert found on OWASP ZAP and no risk level and CWE ID can be identified.
+#### Evaluate:
+- Not available because this website already has a https implementation, as shown by the URL of the website.
+#### Prevent:
+- This alert is not configured on the website. To fix it, confirm that all of the necessary hardware like web servers, application servers and load balancers is set up to only deliver content via HTTPS. Consider putting HTTP Strict Transport Security into practice.
 
 ### <a name="coo"/>h. Cookie Poisoning
 #### Identify:
