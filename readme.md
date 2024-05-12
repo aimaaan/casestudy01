@@ -165,9 +165,67 @@ No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfm
 - Note that this can be bypassed using XSS.
 - Use the ESAPI Session Management control. This control includes a component for CSRF.
 - Do not use the GET method for any request that triggers a state change.
-
 References:
 - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 - https://cwe.mitre.org/data/definitions/352.html
 
+
+### <a name="serv"/>g. Cookie Poisoning
+#### Identify:
+- No alert was found by OWASP ZAP. Thus, no risk level and CWE ID.
+#### Evaluate:
+- Not available on this website. But, from https://www.zaproxy.org/docs/alerts/10029/, this check examines user input in query string parameters and POST data to see where cookie parameters may be altered. This is known as a cookie poisoning attack, and it may be exploited when an attacker can change the cookie in various ways. While this may not be exploitable in some instances, enabling URL parameters to set cookie values is usually seen as a problem.
+#### Prevent:
+- Not available on this website. If not, the solution for this alert is not to enable the user to modify cookie names and values. If query string parameters must be placed in cookie values, ensure that semicolons are not used as name/value pair delimiters.
+
+### <a name="serv"/>h. Potential XSS
+<ins>Automated scan:</ins>
+#### Identify:
+- Identified as User Controllable HTML Element Attribute.
+- The risk level is Informational.
+- Classified as CWE ID:20
+- The page involved is at URL: https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+#### Evaluate:
+- Alert type is Passive
+- This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled.
+- This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.
+- Alert tags
+    - OWASP_2021_A03
+    - OWASP_2017_A01
+- The number of XSS-based attacks is practically infinite, but they frequently involve sending sensitive information to the attacker, such as cookies or other session data, rerouting the victim to their web content, or abusing the user's computer while impersonating the vulnerable website.
+
+#### Prevent:
+- Validate all input and sanitize output before writing to any HTML attributes.
+
+<ins>Manual Explore:</ins>
+1. In manual exploration, I scanned it using the AJAX spider scanner and found some of other risks that are different from the automated scan:
+   ![xss_ME](https://github.com/aimaaan/casestudy01/assets/106076684/c2e25486-1bba-46d6-868e-057804ebd1fd)
+- Above is the Alerts for the potential XSS where its shows the User Controllable HTML Element Attribute (Potential XSS) (852).
+  
+### <a name="serv"/>i. Information Disclosure
+<ins>Automated scan:</ins>
+  
+#### Identify:
+- Risk level: Informational
+- CWE ID:200 
+- The page involved is at URL: 
+https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/InformationDisclosureSuspiciousCommentsScanRule.java
+
+#### Evaluate:
+- Information might be sensitive to different parties, each of which may have their own expectations for whether the information should be protected. These parties include:
+    - the product's users
+    - people or organizations whose information is created or used by the product, even if they are not direct product users
+    - the product's administrators, including the admins of the system(s) and/or networks on which the product operates the developer
+ - It is common practice to describe any loss of confidentiality as an "information exposure," but this can lead to overuse of CWE-200 in CWE mapping. From the CWE perspective, loss of confidentiality is a technical impact that can arise from dozens of different weaknesses, such as insecure file permissions or out-of-bounds read. CWE-200 and its lower-level descendants are intended to cover the mistakes that occur in behaviors that explicitly manage, store, transfer, or cleanse sensitive information.
+#### Prevent:
+- Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.
+
+<ins>Manual Explore:</ins>
+1. In manual exploration, I scanned it using the AJAX spider scanner and found some of other risks that are different from the automated scan:
+   
+![ID_ME](https://github.com/aimaaan/casestudy01/assets/106076684/2ade5938-f292-48e8-b4d8-bd3a5d9fc5fc)
+- Above is the alerts that I found in the website https://selangorfc.com/ where its shows alerts on Information disclosure - suspicious comments (164).
+
+![potential_sensisitive](https://github.com/aimaaan/casestudy01/assets/106076684/40d42954-ae14-4799-9f37-23f0c5527bbd)
+- Above is another alert that I found but the risk level is LOW and the alerts show Big redirect detected (potential sensitive informatil leak (50). 
 
