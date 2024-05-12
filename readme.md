@@ -64,6 +64,11 @@ The objectives of the case study are to identify, evaluate, and mitigate vulnera
 - Prevent Vulnerabilities: For each identified vulnerability, provide detailed recommendations on how to remediate or mitigate the risks. This includes both immediate fixes and longer-term strategies to enhance    the overall security posture of the website.
 
 ## <a name="obsv"/>Observation Results
+Below is the whole alerts after we scanned the manual explore:
+
+![general alert](https://github.com/aimaaan/casestudy01/assets/106076684/c2107cb6-6fd4-47b1-bebf-8c4218f8ce27)
+
+
 ### <a name="port"/>a. Information Gathering, Port scanning for open port
 Information gathering through the external network using OSINT (Open-Source Intelligence) to identify and analyse data that can be seen on the internet.
 
