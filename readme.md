@@ -307,5 +307,5 @@ https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/j
 - Above is another alert that I found but the risk level is LOW and the alerts show Big redirect detected (potential sensitive informatil leak (50). 
 
 ### <a name="wpr"/>4. Weekly Progress Report
-
-[Weekly Progress Report.pdf](https://github.com/aimaaan/casestudy01/files/15286564/Weekly.Progress.Report.pdf)
+Below is our weekly progress report that we documented it and some of the progress about the project.
+[Weekly Progress Report (1).pdf](https://github.com/aimaaan/casestudy01/files/15286571/Weekly.Progress.Report.1.pdf)
