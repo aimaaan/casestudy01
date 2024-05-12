@@ -1,4 +1,4 @@
-# Case Study
+# INFO 4345 CASE STUDY 01 
 
 ## Group Name
 
