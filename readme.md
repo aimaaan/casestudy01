@@ -67,18 +67,12 @@ The objectives of the case study are to identify, evaluate, and mitigate vulnera
 ### <a name="port"/>a. Information Gathering, Port scanning for open port
 Information gathering through the external network using OSINT (Open-Source Intelligence) to identify and analyse data that can be seen on the internet.
 
-| #             | URL                     | OPEN PORTS                           |
-| ------------- |:-----------------------:| ------------------------------------:|
-| 1             | https://selangorfc.com/ | Shodan Ext  | Nmap     | OWASP Zap   |
-|               |                         |   443       |    80,   | 25,         |
-|               |                         |             |    443   | 80,         |
-|               |                         |             |          | 110,        |
-|               |                         |             |          | 563,        |
-|               |                         |             |          | 587,        |
-|               |                         |             |          | 465,        |
-|               |                         |             |          | 119,        |
-|               |                         |             |          | 143,        |
-|               |                         |             |          | 443,        |
+| # | URL                     | Open Ports                        |
+|---|-------------------------|-----------------------------------|
+| 1 | https://selangorfc.com/ | Shodan Ext: 443                   |
+|   |                         | Nmap: 80, 443                     |
+|   |                         | OWASP Zap: 25, 80, 110, 563, 587, |
+|   |                         | 465, 119, 143, 443                |
 
 - Shodan extension:  https://selangorfc.com <br>
   ![shodan scan ](https://github.com/aimaaan/casestudy01/assets/99475237/ec66b7d0-ec5a-4f11-b3dc-cb3de8eb66b9)
