@@ -57,4 +57,35 @@ The alerts observed are listed on the table of contents and we will also identif
 ### <a name="serv"/>a. Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)
 
 #### Identify:
+- Old Asp.Net Version in Use <br>
+![image](https://github.com/aimaaan/casestudy01/assets/99475237/0bd0246d-41fc-434d-88cd-e8eae5d25ac5)
+  - CWE ID: 642 - External Control of Critical State Data
+  - Risk level: Low
+  - Confidence level: Medium
+- Cross-Domain JavaScript Source File Inclusion <br>
+![1 1](https://github.com/aimaaan/casestudy01/assets/99475237/83e87e10-eb3d-41e0-a1a7-ca710f0f8a68)
+    - After scanning it shows 7987 result. however, after deep inspection the result are mostly Server-Side Scripting used is JavaScript as shown by the script source .js extension are from selangorFC domain and        googletagmanager in which they use it for google analytics.
+    - CWE ID: 829 - Inclusion of Functionality from Untrusted Control Sphere
+    - Risk level: Low
+    - Confidence level: Medium
+
+#### Evaluate:
+- Old Asp.Net:
+   - The web application server use uses ASP.NET version 1.0 or 1.1
+   - Shows in the server header in URL: https://selangorfc.com/en/news/3349/Match%20Preview%20LS18%20%7C%20Selangor%20FC%20vs%20Sabah%20FC%20%7C%20Prepared%20and%20Motivated%20for%20Battle
+- Cross-Domain:
+   - The page includes one or more script files from a third-party domain.
+
+#### Prevent:
+- Old Asp.Net:
+   - Ensure the engaged framework is still supported by Microsoft.
+- Cross-Domain:
+   - Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.
+
+Observed examples of these exploits can be seen on their cwe mitre webpage accordingly.
+References:
+- https://cwe.mitre.org/data/definitions/642.html
+- https://cwe.mitre.org/data/definitions/829.html
+
+
   
