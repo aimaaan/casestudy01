@@ -204,6 +204,7 @@ References:
 - Confidence level: Medium
 
 #### Evaluate:
+![3 1 1 1](https://github.com/aimaaan/casestudy01/assets/99475237/7939b8f1-6ab0-4e96-a522-2295c6f3559f)
 - A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective countermeasure to cross-site request forgery, cross-site script inclusion, and timing attacks.
 
 #### Prevent:
