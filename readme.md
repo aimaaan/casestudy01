@@ -71,7 +71,7 @@ Below is the whole alerts after we scanned the manual explore:
 ![general alert](https://github.com/aimaaan/casestudy01/assets/106076684/c2107cb6-6fd4-47b1-bebf-8c4218f8ce27)
 
 
-### <a name="port"/>a. Information Gathering, Port scanning for open port
+### <a name="port"/>a. Information Gathering, Port scanning for open port (Arif)
 Information gathering through the external network using OSINT (Open-Source Intelligence) to identify and analyse data that can be seen on the internet.
 
 | # | URL                     | Open Ports                        |
@@ -95,7 +95,7 @@ Wappalyzer extension shows the web application technology stack used.
 ![zap open port scanning](https://github.com/aimaaan/casestudy01/assets/99475237/919b03cd-052a-48c9-a14b-4d17dc9a0448)
 
 
-### <a name="serv"/>b. Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)
+### <a name="serv"/>b. Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc) (Arif)
 
 #### Identify:
 - Timestamp Disclosure - Unix (8) <br>
@@ -122,10 +122,13 @@ Wappalyzer extension shows the web application technology stack used.
    - 1713213937, which evaluates to: 2024-04-16 04:45:37 <br>
    ![1 3 1](https://github.com/aimaaan/casestudy01/assets/99475237/5cf3dc6f-497d-4cb8-b2a2-43900ceb1b80)
 
-- Old Asp.Net:
+- Old Asp.Net: <br>
+    ![1 2 2 2](https://github.com/aimaaan/casestudy01/assets/99475237/f7c17e9a-5217-463e-8c06-817c78e7a2d7)
    - The web application server use uses ASP.NET version 1.0 or 1.1
    - Shows in the server header in URL: https://selangorfc.com/en/news/3349/Match%20Preview%20LS18%20%7C%20Selangor%20FC%20vs%20Sabah%20FC%20%7C%20Prepared%20and%20Motivated%20for%20Battle
-- Cross-Domain:
+     
+- Cross-Domain: <br>
+    ![1 1 1 1](https://github.com/aimaaan/casestudy01/assets/99475237/29943ad1-ce69-4408-960f-bfc3002d2a89)
    - The page includes one or more script files from a third-party domain.
 
 #### Prevent:
@@ -137,12 +140,13 @@ Wappalyzer extension shows the web application technology stack used.
    - Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.
 
 Observed examples of these exploits can be seen on their cwe mitre webpage accordingly.
+
 References:
 - https://cwe.mitre.org/data/definitions/200.html
 - https://cwe.mitre.org/data/definitions/642.html
 - https://cwe.mitre.org/data/definitions/829.html
 
-### <a name="hash"/> b. Hash Disclosure
+### <a name="hash"/> b. Hash Disclosure (Arif)
 #### Identify:
 - No alerts, i.e. no vulnerability detected by the automated scan. There is also no risk level and cwe assigned on ZAP's alert page.
 
@@ -186,11 +190,12 @@ No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfm
 - Note that this can be bypassed using XSS.
 - Use the ESAPI Session Management control. This control includes a component for CSRF.
 - Do not use the GET method for any request that triggers a state change.
+
 References:
 - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 - https://cwe.mitre.org/data/definitions/352.html
 
-### <a name="sec"/> d. Secured Cookies
+### <a name="sec"/> d. Secured Cookies (Arif)
 #### Identify:
 - Identified as Cookie without the same attribute <br>
 ![4](https://github.com/aimaaan/casestudy01/assets/99475237/ce9050ac-a0ff-4ab3-b307-88bb3f0b5013)
@@ -207,7 +212,7 @@ References:
 References:
 - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
 
-### <a name="csp"/>e. CSP
+### <a name="csp"/>e. CSP 
 #### Identify:
 - Identified as Content Security Policy (CSP) Header Not Set
 - Classified as CWE ID: 693
