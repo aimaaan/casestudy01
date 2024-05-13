@@ -49,7 +49,9 @@ seeker
     9. [Cookie Poisoning](#coo)
     10. [Potential XSS](#pot)
     11. [Information Disclosure](#inf)
-  4. [Weekly Progress Report](#wpr)
+  4. [References](#ref)
+  5. [Weekly Progress Report](#wpr)
+  
 
 ## <a name="desc"/> Description
 
@@ -213,7 +215,7 @@ References:
 References:
 - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
 
-### <a name="csp"/>e. CSP 
+### <a name="csp"/>e. CSP (Zafran)
 #### Identify:
 - Identified as Content Security Policy (CSP) Header Not Set
 - Classified as CWE ID: 693
@@ -229,7 +231,7 @@ References:
 - Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.
 - Configure the webserver to return the Content-Security-Policy HTTP Header with values controlling which resources the browser can load for the page
 
-### <a name="jsl"/>f. JS Library
+### <a name="jsl"/>f. JS Library (Zafran)
 #### Identify:
 - Identified as Vulnerable JS Library
 - Classified as CWE ID: 829
@@ -245,7 +247,7 @@ References:
 - Upgrade to the latest version of jquery.
 - Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.
 
-### <a name="https"/>g. HTTPS implementation (TLS/SSL)
+### <a name="https"/>g. HTTPS implementation (TLS/SSL) (Zafran)
 #### Identify:
 - There is no alert found on OWASP ZAP and no risk level and CWE ID can be identified.
 #### Evaluate:
@@ -253,7 +255,7 @@ References:
 #### Prevent:
 - Not available for the website. However, the solution is to confirm that all of the necessary hardware like web servers, application servers and load balancers is set up to only deliver content via HTTPS. Consider putting HTTP Strict Transport Security into practice.
 
-### <a name="coo"/>h. Cookie Poisoning
+### <a name="coo"/>h. Cookie Poisoning (Nasrullah)
 #### Identify:
 - No alert was found by OWASP ZAP. Thus, no risk level and CWE ID.
 #### Evaluate:
@@ -261,7 +263,7 @@ References:
 #### Prevent:
 - Not available on this website. If not, the solution for this alert is not to enable the user to modify cookie names and values. If query string parameters must be placed in cookie values, ensure that semicolons are not used as name/value pair delimiters.
 
-### <a name="pot"/>i. Potential XSS
+### <a name="pot"/>i. Potential XSS (Nasrullah)
 <ins>Automated scan:</ins>
 #### Identify:
 - Identified as User Controllable HTML Element Attribute.
@@ -285,7 +287,7 @@ References:
    ![xss_ME](https://github.com/aimaaan/casestudy01/assets/106076684/c2e25486-1bba-46d6-868e-057804ebd1fd)
 - Above is the Alerts for the potential XSS where its shows the User Controllable HTML Element Attribute (Potential XSS) (852).
   
-### <a name="inf"/>j. Information Disclosure
+### <a name="inf"/>j. Information Disclosure (Nasrullah)
 <ins>Automated scan:</ins>
   
 #### Identify:
@@ -312,6 +314,23 @@ https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/j
 ![potential_sensisitive](https://github.com/aimaaan/casestudy01/assets/106076684/40d42954-ae14-4799-9f37-23f0c5527bbd)
 - Above is another alert that I found but the risk level is LOW and the alerts show Big redirect detected (potential sensitive informatil leak (50). 
 
-### <a name="wpr"/>4. Weekly Progress Report
+### <a name="ref"/>4. References (All)
+1. Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)
+   - https://cwe.mitre.org/data/definitions/200.html
+   - https://cwe.mitre.org/data/definitions/642.html
+   - https://cwe.mitre.org/data/definitions/829.html
+2. CSRF
+   - https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+   - https://cwe.mitre.org/data/definitions/352.html
+3. Secured Cookies
+   - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
+4. CSP
+5. JS Library
+6. HTTPS implementation (TLS/SSL
+7. Cookie Poisoning
+8. Potential XSS
+9. Information Disclosure
+
+### <a name="wpr"/>5. Weekly Progress Report (Nasrullah)
 Below is our weekly progress report that we documented it and some of the progress about the project.
 [Weekly Progress Report (1).pdf](https://github.com/aimaaan/casestudy01/files/15286571/Weekly.Progress.Report.1.pdf)
