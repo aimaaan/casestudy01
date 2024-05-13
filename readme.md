@@ -312,7 +312,7 @@ https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/j
 - Above is the alerts that I found in the website https://selangorfc.com/ where its shows alerts on Information disclosure - suspicious comments (164).
 
 ![potential_sensisitive](https://github.com/aimaaan/casestudy01/assets/106076684/40d42954-ae14-4799-9f37-23f0c5527bbd)
-- Above is another alert that I found but the risk level is LOW and the alerts show Big redirect detected (potential sensitive informatil leak (50). 
+- Above is another alert that I found but the risk level is LOW and the alerts show a Big redirect detected (potential sensitive information leak (50). 
 
 ### <a name="ref"/>4. References (All)
 1. Server OS and Server-Side Scripting used (Windows or Linux, PHP or ASP.net or JavaScript, etc)
@@ -328,9 +328,12 @@ https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/j
 5. JS Library
 6. HTTPS implementation (TLS/SSL
 7. Cookie Poisoning
-8. Potential XSS
-9. Information Disclosure
+   - No references
+9. Potential XSS
+   - https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
+10. Information Disclosure
+    - No references were provided in the report.
 
 ### <a name="wpr"/>5. Weekly Progress Report (Nasrullah)
-Below is our weekly progress report that we documented it and some of the progress about the project.
+Below is our weekly progress report that we documented and some of the progress of the project.
 [Weekly Progress Report (1).pdf](https://github.com/aimaaan/casestudy01/files/15286571/Weekly.Progress.Report.1.pdf)
