@@ -156,7 +156,7 @@ References:
 #### Prevent:
 - N/a for this website. Otherwise, ensure that hashes that are used to protect credentials or other resources are not leaked by the web server or database. There is typically no requirement for password hashes to be accessible to the web browser.
 
-### <a name="csrf"/>c. CSRF
+### <a name="csrf"/>c. CSRF (Arif)
 #### Identify:
 - Absence of Anti-CSRF Tokens <br>
 ![3](https://github.com/aimaaan/casestudy01/assets/99475237/ae5589cc-5577-48ad-917e-32f2b2fa6d0f)
