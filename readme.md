@@ -74,7 +74,7 @@ Below is the whole alerts after we scanned the manual explore:
 
 
 ### <a name="port"/>a. Information Gathering, Port scanning for open port (Arif)
-Information gathering through the external network using OSINT (Open-Source Intelligence) to identify and analyse data that can be seen on the internet.
+Information gathering through the external network using OSINT (Open-Source Intelligence) to identify and analyse data that can be seen on the internet. Scanning for open port. Each of open ports are potential entry points for attackers.
 
 | # | URL                     | Open Ports                        |
 |---|-------------------------|-----------------------------------|
