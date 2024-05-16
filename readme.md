@@ -325,13 +325,17 @@ https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/j
 3. Secured Cookies
    - https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site
 4. CSP
-5. JS Library
-6. HTTPS implementation (TLS/SSL
-7. Cookie Poisoning
+   -  https://developer.mozilla.org/enUS/docs/Web/Security/CSP/Introducing_Content_Security_Policy
+   -   https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+6. JS Library
+   -  https://blog.jquery.com/2020/04/10/jquery3-5-0-released/
+8. HTTPS implementation (TLS/SSL)
    - No references
-9. Potential XSS
+10. Cookie Poisoning
+   - No references
+11. Potential XSS
    - https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html
-10. Information Disclosure
+11. Information Disclosure
     - No references were provided in the report.
 
 ### <a name="wpr"/>5. Weekly Progress Report (Nasrullah)
